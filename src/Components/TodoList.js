@@ -3,8 +3,8 @@ import TodoItem from "./TodoItem";
 import { useSelector } from "react-redux";
 
 const TodoList = () => {
-  const todos = useSelector((state) => state.todos);
-  console.log(todos);
+  const todos = useSelector((state) => state.todos); // Select todos from Redux store
+
   return (
     <ul className="list-group">
       {todos?.map((todo) => (
